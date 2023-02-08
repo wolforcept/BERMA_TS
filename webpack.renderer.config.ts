@@ -8,6 +8,18 @@ rules.push({
   use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
 });
 
+// rules.push({
+//   test: /\.svg$/,
+//   use: [
+//     {
+//       loader: '@svgr/webpack',
+//       options: {
+//         native: true,
+//       },
+//     },
+//   ],
+// });
+
 export const rendererConfig: Configuration = {
   module: {
     rules,
